@@ -1,8 +1,8 @@
 return {
 	{
-		"nvim-treesitter/nvim-treesitter"
+		"nvim-treesitter/nvim-treesitter",
 	},
 	{
-		"windwp/nvim-ts-autotag"
-	}
+		"windwp/nvim-ts-autotag",
+	},
 }
