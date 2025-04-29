@@ -12,6 +12,7 @@ local opt = vim.opt
 opt.expandtab = false
 opt.cursorline = true
 opt.tabstop = 3
+opt.shiftwidth = 3
 opt.wrap = false
 opt.number = true
 opt.spell = true
