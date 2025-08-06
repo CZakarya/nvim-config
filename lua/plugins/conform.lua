@@ -2,14 +2,16 @@ return {
 	{
 		"stevearc/conform.nvim",
 
-		opts = {},
-		config = function()
-			require("conform").setup({
+		opts = {
+			{
 				formatters_by_ft = {
 					json = { "prettier" },
 					lua = { "stylua" },
 				},
-			})
+			},
+		},
+		config = function(_, opts)
+			require("conform").setup(opts)
 		end,
 	},
 }

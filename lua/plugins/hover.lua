@@ -1,9 +1,8 @@
 return {
 	{
 		"lewis6991/hover.nvim",
-		config = function()
-			local hover = require("hover")
-			hover.setup({
+		opts = {
+			{
 				init = function()
 					require("hover.providers.lsp")
 					require("hover.providers.fold_preview")
@@ -23,7 +22,11 @@ return {
 					"LSP",
 				},
 				mouse_delay = 1000,
-			})
+			},
+		},
+		config = function(_, opts)
+			local hover = require("hover")
+			hover.setup(opts)
 
 			-- Setup keymaps
 			vim.keymap.set("n", "K", hover.hover, { desc = "hover.nvim" })

@@ -17,5 +17,8 @@ return {
 			statuscolumn = { enabled = true },
 			words = { enabled = true },
 		},
+		config = function(_, opts)
+			require("snacks").setup(opts)
+		end,
 	},
 }
