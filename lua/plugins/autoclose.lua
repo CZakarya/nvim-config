@@ -1,8 +1,8 @@
 return {
 	{
 		"m4xshen/autoclose.nvim",
-		config = function()
-			require("autoclose").setup({
+		opts = {
+			{
 				keys = {
 					--[[**
 					* Here I'm removing the single quote "tick" character from autoclose
@@ -11,7 +11,10 @@ return {
 					*]]
 					["'"] = { escape = false, close = false, pair = "''" },
 				},
-			})
+			}
+		},
+		config = function(_, opts)
+			require("autoclose").setup(opts)
 		end,
 	},
 }
