@@ -2,17 +2,15 @@ return {
 	{
 		"ya2s/nvim-cursorline",
 		opts = {
-			{
-				cursorline = {
-					enable = true,
-					timeout = 0,
-					number = false,
-				},
-				cursorword = {
-					enable = true,
-					min_length = 3,
-					hl = { underline = true },
-				},
+			cursorline = {
+				enable = true,
+				timeout = 0,
+				number = false,
+			},
+			cursorword = {
+				enable = true,
+				min_length = 3,
+				hl = { underline = true },
 			},
 		},
 		config = function(_, opts)
