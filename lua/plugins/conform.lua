@@ -6,6 +6,8 @@ return {
 			{
 				formatters_by_ft = {
 					json = { "prettier" },
+					svelte = { "prettier" },
+					ts = { "prettier" },
 					lua = { "stylua" },
 				},
 			},
