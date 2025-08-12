@@ -2,27 +2,25 @@ return {
 	{
 		"lewis6991/hover.nvim",
 		opts = {
-			{
-				init = function()
-					require("hover.providers.lsp")
-					require("hover.providers.fold_preview")
-					require("hover.providers.diagnostic")
-					require("hover.providers.man")
-					require("hover.providers.dictionary")
-					require("hover.providers.highlight")
-				end,
-				preview_opts = {
-					border = "single",
-				},
-				-- Whether the contents of a currently open hover window should be moved
-				-- to a :h preview-window when pressing the hover keymap.
-				preview_window = false,
-				title = true,
-				mouse_providers = {
-					"LSP",
-				},
-				mouse_delay = 1000,
+			init = function()
+				require("hover.providers.lsp")
+				require("hover.providers.fold_preview")
+				require("hover.providers.diagnostic")
+				require("hover.providers.man")
+				require("hover.providers.dictionary")
+				require("hover.providers.highlight")
+			end,
+			preview_opts = {
+				border = "single",
 			},
+			-- Whether the contents of a currently open hover window should be moved
+			-- to a :h preview-window when pressing the hover keymap.
+			preview_window = false,
+			title = true,
+			mouse_providers = {
+				"LSP",
+			},
+			mouse_delay = 1000,
 		},
 		config = function(_, opts)
 			local hover = require("hover")
