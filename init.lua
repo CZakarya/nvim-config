@@ -1,8 +1,9 @@
 require("config.lazy")
 
--- Gruvbox theme
 vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
+
+-- Theme selection
+vim.cmd([[colorscheme onedark]])
 
 -- Vim config
 local opt = vim.opt
