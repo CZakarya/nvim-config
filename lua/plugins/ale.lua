@@ -8,7 +8,4 @@ return {
 			require("ale").setup(opts)
 		end
 	},
-	{
-		"evanleck/vim-svelte",
-	},
 }
