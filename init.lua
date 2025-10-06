@@ -22,6 +22,10 @@ vim.api.nvim_create_user_command("Exp", function()
 	Snacks.explorer.open()
 end, { range = true })
 
+vim.api.nvim_create_user_command("Term", function()
+	Snacks.terminal()
+end, { range = true })
+
 vim.api.nvim_create_user_command("Fmt", function(args)
 	local range = nil
 	if args.count ~= -1 then
