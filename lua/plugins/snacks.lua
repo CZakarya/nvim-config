@@ -9,13 +9,25 @@ return {
 			explorer = { enabled = true },
 			indent = { enabled = true },
 			input = { enabled = true },
-			picker = { enabled = true },
+			picker = {
+				enabled = true,
+				sources = {
+					explorer = {
+						layout = {
+							layout = {
+								position = "right",
+							},
+						},
+					},
+					files = {
+						hidden = true,
+					},
+				},
+			},
 			notifier = { enabled = true },
 			quickfile = { enabled = true },
 			scope = { enabled = true },
 			scroll = { enabled = true },
-			statuscolumn = { enabled = true },
-			words = { enabled = true },
 		},
 		config = function(_, opts)
 			require("snacks").setup(opts)
