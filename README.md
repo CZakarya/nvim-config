@@ -26,5 +26,6 @@ It also has formatting, autocomplete, and the Gruvbox theme.
 **Special actions:**  
 To activate the formatter, do `:Fmt`  
 To open the file explorer window, do `:Exp`  
+To open a terminal pane, do `:Term`  
 To enter the selected autocomplete selection, press `Tab`  
 To see information on the word at the cursor, press `Shift-K`. You can also hover over it with your cursor.
