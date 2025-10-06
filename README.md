@@ -21,7 +21,7 @@ Have fun.
 
 This configuration uses lazy.nvim for package management and Mason for collecting LSPs.
 
-It also has formatting, autocomplete, and the Gruvbox theme.
+It also has formatting, autocomplete, and the One Dark theme.
 
 **Special actions:**  
 To activate the formatter, do `:Fmt`  
