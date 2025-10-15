@@ -10,6 +10,10 @@ return {
 				*]]
 				["'"] = { escape = false, close = false, pair = "''" },
 			},
+			options = {
+				disable_when_touch = true,
+				pair_spaces = true,
+			}
 		},
 		config = function(_, opts)
 			require("autoclose").setup(opts)
