@@ -8,6 +8,7 @@ vim.cmd([[colorscheme onedark]])
 -- Vim config
 local opt = vim.opt
 
+opt.title = true
 opt.expandtab = false
 opt.cursorline = true
 opt.tabstop = 3
