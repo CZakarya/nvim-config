@@ -14,5 +14,5 @@
   "nvim-ts-autotag": { "branch": "main", "commit": "c4ca798ab95b316a768d51eaaaee48f64a4a46bc" },
   "nvim-web-devicons": { "branch": "master", "commit": "8dcb311b0c92d460fac00eac706abd43d94d68af" },
   "onedark.nvim": { "branch": "master", "commit": "de495fabe171d48aed5525f002d14414efcecbb2" },
-  "snacks.nvim": { "branch": "main", "commit": "e39478daace819a93bd9ace62aa3dc4f55fb5254" }
+  "snacks.nvim": { "branch": "main", "commit": "52f30a198a19bf5da6aa95cc642bfbb99b9bbfbf" }
 }

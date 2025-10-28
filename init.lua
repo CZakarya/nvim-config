@@ -9,6 +9,7 @@ vim.cmd([[colorscheme onedark]])
 local opt = vim.opt
 
 opt.title = true
+opt.titlestring = "%t%( %M%)%( (" .. vim.fn.expand("%:~:h") .. ")%)%a - Neovim"
 opt.expandtab = false
 opt.cursorline = true
 opt.tabstop = 3
