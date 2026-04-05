@@ -72,3 +72,24 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.softtabstop = 2
 	end,
 })
+
+-- BufferLine cycling/moving
+local function nmap(lhs, rhs)
+	vim.keymap.set("n", lhs, rhs, { noremap = true, silent = true })
+end
+
+nmap("<A-Right>", function()
+	require("bufferline").cycle(1)
+end)
+
+nmap("<A-Left>", function()
+	require("bufferline").cycle(-1)
+end)
+
+nmap("<A-S-Right>", function()
+	require("bufferline").move(1)
+end)
+
+nmap("<A-S-Left>", function()
+	require("bufferline").move(-1)
+end)

@@ -29,3 +29,4 @@ To open the file explorer window, do `:Exp`
 To open a terminal pane, do `:Term`  
 To enter the selected autocomplete selection, press `Tab`  
 To see information on the word at the cursor, press `Shift-K`. You can also hover over it with your cursor.
+To move through tabs, `use alt+left|right`. To move tabs, use `alt+shift+left|right`.
