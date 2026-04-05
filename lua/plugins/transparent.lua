@@ -38,7 +38,7 @@ return {
 		config = function(_, opts)
 			require("transparent").setup(opts)
 
-			require("transparent").clear_prefix("Snacks")
+			-- require("transparent").clear_prefix("Snacks") -- Seems to hide the selected line indicator as well, no good
 			require("transparent").clear_prefix("lualine")
 			-- require("transparent").clear_prefix("BufferLine") -- Doesn't work
 		end,
